@@ -1,0 +1,52 @@
+320 500
+
+9 9
+v v v v w v v v v
+v v v v w v v v v
+v w w w w w w w v
+v w w v v v w w v
+v w w v v v w w v
+v w w w w w w w v
+v w w w w w w w v
+v v v v w v v v v
+v v v v v v v v v
+
+door 4 7 d1 true down Room1.txt 300 70
+door 4 0 d2 true up Room3.txt 300 560
+
+spike 7 5 ys1 true YELLOW true 4
+spike 1 5 ys2 false YELLOW true 4
+spike 4 1 ys3 false YELLOW true 3
+
+spike 4 1 ps1 false MEDIUMORCHID true 1
+
+spike 6 4 os1 false ORANGE true 4
+spike 2 4 os2 false ORANGE true 4
+spike 4 1 os3 false ORANGE true 2
+
+spike 4 1 bs1 false SKYBLUE true 4
+spike 2 4 bs2 false SKYBLUE true 3
+spike 6 4 bs3 true SKYBLUE true 3
+spike 5 2 bs4 false SKYBLUE false 1
+spike 3 2 bs5 true SKYBLUE false 1
+
+spring 3 6 s1 false true false left 90 470 0
+spring 5 6 s2 false true false right 540 470 0
+
+button 1 6 yb1 true true false false false YELLOW 3 ys1 ys2 ys3
+button 7 6 pb1 true true false false false MEDIUMORCHID 1 ps1
+button 5 5 ob1 true true true false false ORANGE 3 os1 os2 os3
+button 4 5 yb2 true true true false false YELLOW 3 ys1 ys2 ys3
+button 3 5 bb1 true true true false false SKYBLUE 5 bs1 bs2 bs3 bs4 bs5
+button 2 5 pb2 true true true false false MEDIUMORCHID 1 ps1
+
+button 1 2 ob2 true true true true false ORANGE 3 os1 os2 os3
+button 6 2 bb2 true true true true false SKYBLUE 5 bs1 bs2 bs3 bs4 bs5
+
+wall 150 430 GREY 75 20
+wall 225 430 GREY 75 20
+wall 300 430 GREY 75 20
+wall 375 430 GREY 75 20
+wall 450 430 GREY 75 20
+wall 75 355 GREY 75 20
+wall 525 355 Grey 75 20

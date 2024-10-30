@@ -1,0 +1,16 @@
+240 340
+
+6 9
+
+v b w b w v
+v w b w b v 
+v b w b w v
+v w b w b v
+v b w b w v
+v w b w b v
+v v v v v v
+v v v v v v
+v v v v v v
+
+door 3 0 d1 true up Room2.txt 320 500
+musicbox 4 3 m1 false

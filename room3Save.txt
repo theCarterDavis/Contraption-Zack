@@ -1,0 +1,44 @@
+300.0 560.0
+9 9
+v v c v v v v v v 
+v v c c c c c v v 
+v c c c c c c v v 
+v v c c c c c v v 
+v v c c c c c v v 
+v v c c c c c v v 
+v v c c c c c v v 
+v v c c c c c v v 
+v v c c c c c v v 
+
+door 2 0 d1 true up Room5.txt 170.0 400.0
+door 1 2 d2 true left Room4.txt 480.0 180.0
+door 4 8 d3 true down Room2.txt 330.0 50.0
+wall 150 550 WHITE 150 20 
+wall 375 550 WHITE 150 20 
+wall 150 405 WHITE 150 20 
+wall 375 405 WHITE 150 20 
+wall 150 250 WHITE 150 20 
+wall 375 250 WHITE 150 20 
+wall 280 225 WHITE 20 75 
+wall 375 225 WHITE 20 75 
+wall 280 375 WHITE 20 75 
+wall 375 375 WHITE 20 75 
+wall 280 525 WHITE 20 75 
+wall 375 525 WHITE 20 75 
+spike 3 2 sp1  true BLUE false 4
+spike 4 3 sp2  true PURPLE true 2
+spike 4 3 sp3  true YELLOW true 3
+spike 5 2 sp4  true GREEN false 1
+wall 280 75 WHITE 20 75 
+wall 300 75 WHITE 75 20 
+wall 375 75 WHITE 20 75 
+circlebutton 2 6 cb1 true false true false false PURPLE 20324 20324 1 sp2
+circlebutton 3 6 cb1 true false true false false GREEN 20017 20017 1 sp4
+circlebutton 2 4 cb1 true false true false false YELLOW 24276 24276 1 sp3
+circlebutton 6 6 cb1 true true false false false YELLOW 34000 0 1 sp3
+circlebutton 5 4 cb1 true false true false false BLUE 32099 32099 1 sp1
+circlebutton 6 4 cb1 true true false false false PURPLE 34000 0 1 sp2
+gate 3 6 g1 true false 4 right
+gate 3 4 g2 true false 8 right
+gate 5 6 g3 true false 12 left
+gate 5 4 g4 true false 16 left

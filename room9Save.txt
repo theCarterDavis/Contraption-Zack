@@ -1,0 +1,30 @@
+535.0 150.0
+8 8
+v v v v v v v v 
+v c c c c c a c 
+v c c c c c a c 
+v c c c c c a c 
+v c c c c c a c 
+v c c c c c a c 
+v c c c c c a c 
+v v v v v v v v 
+
+door 1 5 d1 true left Room8.txt 480.0 405.0
+door 7 1 d2 true right Room10.txt 160.0 235.0
+door 1 2 d3 true left Room8.txt 430.0 150.0
+spring 5 6 sp1  false false true right 550 450 0
+wall 355 280 RED 20 245 
+wall 75 280 BLACK 300 20 
+spike 3 6 spike1  true BLUE false 1
+spike 3 5 spike2  true BLUE false 1
+spike 3 4 spike3  true BLUE false 1
+lever l1 175 280 2 3 150.0 225.0 false 1 tr1
+treadmill 7 4 tr1 true up 525.0 225.0
+screw 300 300 ss1 2 tr1 sp1
+button 3 1 button1 true false false false false BLUE  3 spike1 spike2 spike3 
+water 6 1 w1 false
+water 6 2 w2 false
+water 6 3 w3 false
+water 6 4 w4 false
+water 6 5 w5 false
+water 6 6 w6 false

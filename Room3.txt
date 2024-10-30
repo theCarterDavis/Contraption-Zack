@@ -1,0 +1,60 @@
+300 560
+
+9 9 
+
+v v c v v v v v v
+v v c c c c c v v 
+v c c c c c c v v 
+v v c c c c c v v 
+v v c c c c c v v 
+v v c c c c c v v 
+v v c c c c c v v 
+v v c c c c c v v 
+v v c c c c c v v
+
+door 2 0 d1 true up Room5.txt 170 400
+door 1 2 d2 true left Room4.txt 480 180
+door 4 8 d3 true down Room2.txt 330 50
+
+wall 150 550 WHITE 150 20
+wall 375 550 WHITE 150 20
+
+wall 150 405 WHITE 150 20
+wall 375 405 WHITE 150 20
+
+wall 150 250 WHITE 150 20
+wall 375 250 WHITE 150 20 
+
+wall 280 225 WHITE 20 75
+wall 375 225 WHITE 20 75 
+
+wall 280 375 WHITE 20 75
+wall 375 375 WHITE 20 75 
+
+wall 280 525 WHITE 20 75
+wall 375 525 WHITE 20 75 
+
+screwdriver 7 1 375 75 450 200
+
+spike 3 2 sp1 false BLUE false 4
+spike 4 3 sp2 false PURPLE true 2
+spike 4 3 sp3 false YELLOW true 3
+spike 5 2 sp4 false GREEN false 1
+
+wall 280 75 WHITE 20 75 
+wall 300 75 WHITE 75 20 
+wall 375 75 WHITE 20 75 
+
+circlebutton 2 6 cb1 true true false false false PURPLE 34000 0 1 sp2 
+circlebutton 3 6 cb1 true true false false false GREEN 34000 0 1 sp4 
+circlebutton 2 4 cb1 true true false false false YELLOW 34000 0 1 sp3   
+
+circlebutton 6 6 cb1 true true false false false YELLOW 34000 0 1 sp3
+circlebutton 5 4 cb1 true true false false false BLUE 34000 0 1 sp1  
+circlebutton 6 4 cb1 true true false false false PURPLE 34000 0 1 sp2  
+
+gate 3 6 g1 true false 4 right 
+gate 3 4 g2 true false 8 right 
+
+gate 5 6 g3 true false 12 left 
+gate 5 4 g4 true false 16 left 

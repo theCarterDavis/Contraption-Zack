@@ -1,0 +1,65 @@
+#New variable format, Completly rewritten
+#Called Carter's Notation lol
+
+#anyways squares are represented by various char chacters
+#So far we have
+
+roomloadX
+roomloadY
+#Thee values are for restarting the room (So the player values needed to load the game if the restartArea button is pressed)
+
+int x, int y (numbers to indicate dynamically how large the room is (square wise
+
+'v' = void which means nothing (can't walk and black square)
+'b' = black square (basically used for only level one as of right now)
+'w' = white square (base square for a lot of levels)
+'g' = grey square
+'c' = cobble
+
+#So this is how I designed the mechanisms. Based off of carter's notation I thought that the best way might be to still link them based off of where the would be on the board
+#I would use the 2d array and map where the square and mechanism where located (i and j) were both passed into the Mechanism and the square
+#If there was a match (see the first draw method in the gameRunner) the mechanism would take in the Square's real x and y and be drawn in the middle of it if that makes sense
+
+#Heres the mechanisms that have been defined thus far:
+
+door int arrayX(i), int arrayY(j), string mechID, boolean canWalk, string position(this is which way the arrow is facing),string room (the room the door links to), double newRoomX, double newRoomY
+#newRoomPlayerX and newRoomPlayerY are the Player's Cordinates when the load into the new room, they unfortunely can't be hard coded into the room text files because rooms have multiple doors and spawn points I learned
+
+musicBox int arrayX(i), int arrayY(j), String mechID, boolean canWalk #pretty self explanatory with this one
+
+spring int arrayX(i), int arrayY(j), String mechID, boolean canWalk, booleanIsUp, boolean timeOut, String launchDirection, int newPlayerX, int newRoomPlayerY
+#Same type of parameters with arrayX - canWalk; is up is used to check and see of the spring is up already, timeOut is for the future when we incorporate a timeout, launchDirection is for drawing the spring and newPlayerX and newPlayerY are the cordinates of the player after they activate a spring.
+
+
+wall (int xPos, int yPos, String color)
+Draw a wall at xPos, yPos and the color. also have variable canWalk that is always false. 
+
+gate int arrayX(i), int arrayY(j), String mechID, boolean canWalk, boolean isOpen (whether or not the gate is open), int startTime (delay to open the gate see room 3 video they all start at differen times), String getPosition (position of the gate on the square)
+#Pretty self explanatory
+
+double xCordinate and double yCordiante dont really do anything 
+screwdriver int squareX, int squareY, int xPos, int yPos, double xCordinate, double yCordinate
+Ex.) screwdriver 4 0 375 25 450 200 
+
+lever String mechID, int xPos, int yPos, int squareX, int squareY, double xCoordinate, double yCoordinate
+Ex.) lever y6 375 50 4 0 1000 1000 
+
+Ex.) electricity 4 0 y5 375 50 1000 1000 
+
+
+For example room one will look like this
+
+6 9
+
+v b w b w v
+v w b w b v 
+v b w b w v
+v w b w b v
+v b w b w v
+v w b w b v
+v v v v v v
+v v v v v v
+v v v v v v
+
+door 3 0 d1 true up Room2.txt 300 560
+musicBox 4 3 m1 false

@@ -1,0 +1,27 @@
+75.0 150.0
+9 9
+v v v v v v v v v 
+v t t t t t t t v 
+v t t t t t t t v 
+v t t t t t t t v 
+v t t t t t t t v 
+v t t t t t t t v 
+v t t t t t t t v 
+v v v v v v v v v 
+v v v v v v v v v 
+
+door 7 3 d1 true right Room4.txt 150.0 250.0
+door 5 1 d3 true up Room8.txt 475.0 405.0
+door 2 1 d2 true up Room8.txt 180.0 405.0
+door 7 5 d4 true right Room4.txt 150.0 480.0
+wall 75 300 GREY 75 20 
+wall 225 300 GREY 75 20 
+wall 280 75 RED 20 225 
+wall 280 300 RED 320 20 
+wall 375 205 RED 225 20 
+button 1 6 br71 true false false false false BLUE  1 sr71 
+button 1 1 br72 true false false false false YELLOW  1 sr72
+button 4 3 br73 true false false false false PURPLE  1 sr73 
+spike 5 3 sr71  true BLUE false 4
+spike 4 2 sr72  true YELLOW true 4
+spike 2 4 sr73  true PURPLE true 1

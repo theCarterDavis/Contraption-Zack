@@ -1,0 +1,30 @@
+100.0 500.0
+9 9
+v v v v v v v v v 
+v r r v v v v v v 
+v r r v v v v v v 
+v r r r r r r r r 
+v r r v v v v v v 
+v r r v r r r r r 
+v r r v r r r r r 
+v r r v r r v v v 
+v v v v v v v v v 
+
+door 1 7 d3 true down Room5.txt 170.0 200.0
+door 4 7 d3 true down Room5.txt 480.0 200.0
+spring 2 3 sp1  true true false up 380 250 0
+spring 3 3 sp2  true true false left 230 480 0
+spring 4 3 sp3  true true false down 380 480 0
+spring 6 3 sp4  true true false right 440 460 0
+button 5 3 y1 true false false false false YELLOW  5 s1 s2 s3 s4 s5 
+button 7 3 b1 true true false false false GREEN  1 y1 
+button 2 1 b1 true true false false true BLACK  4 sp1 sp2 sp3 sp4 
+spike 3 3 s1  true YELLOW false 4
+spike 5 3 s2  true YELLOW false 4
+spike 5 7 s3  false YELLOW false 4
+spike 5 6 s4  false YELLOW false 4
+spike 5 5 s5  false YELLOW false 4
+wrench 7 5
+crescentwrench 7 6
+taperole 8 6
+pipe 6 6

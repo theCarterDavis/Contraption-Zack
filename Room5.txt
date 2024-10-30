@@ -1,0 +1,17 @@
+170 400
+
+9 9 
+
+v v v v v v v v v
+v v v v v v v v v 
+v v r v v v r r v
+v r r r v v r r v
+v r r r v v r r v
+v r r r v v r r v
+v v r v v v r r v
+v v v v v v v v v 
+v v v v v v v v v
+
+door 6 2 d2 true up Room6.txt 350 500
+door 2 2 d3 true up Room6.txt 100 500
+door 2 6 d3 true down Room3.txt 170 150
